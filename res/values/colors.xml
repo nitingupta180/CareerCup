@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cc_color_background">#FFEEEEEE</color>
+    <color name="cc_drawer_background">#FFF8F8F8</color>
+    <color name="cc_drawer_background_touched">#FFE0E0E0</color>
+    <color name="cc_actionbar_title_color">#4D4D4D</color>
+    <color name="cc_actionbar_subtitle_color">#808080</color>
+    <color name="cc_fragment_background">#FFEEEEEE</color>
+    <color name="primary_text_color">#FF333333</color>
+    <color name="opaque_black">#B3000000</color>
+    <color name="answer_card">#FFE5E5E5</color>
+</resources>

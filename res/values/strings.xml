@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CareerCup</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer List Items String -->
+    <string name="questions">Questions</string>
+    <string name="forum">Forums</string>
+    <string name="salaries">Salaries</string>
+    <string name="resume_tips">Resume Tips</string>
+    <string name="rss">RSS</string>
+
+    <!-- Drawer Open/Close -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="text_placeholder">Text Placeholder</string>
+    <string name="title_answer_activity">Answers</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_forum">Forum Post</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3042722460663013/6128549112</string>
+
+</resources>

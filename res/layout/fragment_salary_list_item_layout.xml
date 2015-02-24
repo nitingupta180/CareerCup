@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="8dp" >
+    
+    <TextView 
+        android:id="@+id/tvCompanyName"
+        style="@style/CardTextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rlIconLayout"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCompanyName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ivCompanyIcon"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_company_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSalaryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/rlIconLayout"
+        android:layout_below="@+id/tvCompanyName" >
+
+        <TextView
+            android:id="@+id/tvSalaryDetail"
+            style="@style/CardTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fadingEdgeLength="32dp"
+            android:paddingBottom="10dp"
+            android:requiresFadingEdge="horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAuthorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/rlIconLayout" >
+
+        <TextView
+            android:id="@+id/tvAuthorDetails"
+            style="@style/CardTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlIconLayout"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ivCompanyIcon"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_forum_default" />
+
+        <TextView
+            android:id="@+id/tvNumAnswers"
+            style="@style/CardTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivCompanyIcon"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlForumLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rlIconLayout"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/tvForumHeader"
+            style="@style/CardTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:fadingEdgeLength="32dp"
+            android:requiresFadingEdge="horizontal" />
+        
+        <TextView
+            android:id="@+id/tvForumText"
+            style="@style/CardTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvForumHeader"
+            android:paddingBottom="10dp"
+            android:ellipsize="end"
+            android:fadingEdgeLength="32dp"
+            android:requiresFadingEdge="horizontal" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlAuthorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/rlIconLayout"
+        android:layout_alignParentBottom="true" >
+        
+        <TextView
+            android:id="@+id/tvPosterName"
+            style="@style/CardTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvPostingTime"
+            style="@style/CardTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tvPosterName"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+</RelativeLayout>
